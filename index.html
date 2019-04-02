@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>123</title>
+
+
+	<style>
+
+	.block{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		width: 500px;
+		margin: 0 auto;
+		
+	}
+	.child{
+		box-sizing: border-box;
+		height: 100px;
+		width: 50%;
+		background-color: lightblue;
+		/*margin: 10px;*/
+		border: solid red 1px;
+		
+	}
+
+	.child:nth-child(-n+2){
+		height: 200px;
+	}
+
+	.child:last-child{
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+	<div class="block">
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+	</div>
+</body>
+</html>
