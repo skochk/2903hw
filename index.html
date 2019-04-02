@@ -6,22 +6,33 @@
 
 	<style>
 
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+	body{
+		 margin: 0;
+	}
 	.block{
-		position: relative;
-		display: flex;
-		flex-wrap: wrap;
 		width: 500px;
-		margin: 0 auto;
+		
+		
 		
 	}
 	.child{
+	
+
+	
 		box-sizing: border-box;
 		height: 100px;
-		width: 50%;
+		width: 240px;
 		background-color: lightblue;
-		/*margin: 10px;*/
-		border: solid red 1px;
-		
+	
+	
+	}
+	div{ 
+		float: left; 
 	}
 
 	.child:nth-child(-n+2){
@@ -34,13 +45,6 @@
 	</style>
 </head>
 <body>
-	<div class="block">
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-	</div>
+	<div class="block"><div class="child"></div><div class="child"></div><div class="child"></div><div class="child"></div><div class="child"></div><div class="child"></div></div>
 </body>
 </html>
